@@ -1,0 +1,44 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WordSearch()
+comment0.text=\=\=\=\=\=\=\=\=\ public\ WordSearch())\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ \ \n\ \ \ \ Returns\:\ \n\n\ \ \ \ Initializes\ the\ grid\ to\ be\ SIZE\ x\ SIZE\n\ \ \ \ Sets\ every\ character\ to\ a\ default\ value\ of\ \n\ \ \ \ your\ choosing\ (like\ '-').\n\n\ \ \ \ Initializes\ words\ as\ an\ empty\ ArrayList<String>\n\ \ \ \ Initializes\ dictionary\ as\ an\ empty\ ArrayList<String>\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment1.params=rows\ cols
+comment1.target=WordSearch(int,\ int)
+comment1.text=\=\=\=\=\=\=\=\=\ public\ WordSearch()\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ int\ rows\n\ \ \ \ int\ cols\ \n\ \ \ \ Returns\:\ \n\n\ \ \ \ Initializes\ the\ grid\ to\ be\ rows\ x\ cols\n\ \ \ \ Sets\ every\ character\ to\ a\ default\ value\ of\ \n\ \ \ \ your\ choosing\ (like\ '-').\n\n\ \ \ \ Initializes\ words\ as\ an\ empty\ ArrayList<String>\n\ \ \ \ Initializes\ dictionary\ as\ an\ empty\ ArrayList<String>\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment10.params=
+comment10.target=void\ fillGrid()
+comment10.text=\=\=\=\=\=\=\=\=\ public\ void\ fillGrid())\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ \ \n\ \ \ \ Returns\:\ \n\n\ \ \ \ Goes\ through\ the\ grid\ and\ fills\ every\ non-letter\ space\ \n\ \ \ \ with\ a\ random\ letter.\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment11.params=
+comment11.target=java.lang.String\ randomWord()
+comment12.params=
+comment12.target=java.lang.String\ getWordFromDictionary()
+comment12.text=\=\=\=\=\=\=\=\=\ public\ String\ getWordFromDictionary())\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ \ \n\ \ \ \ Returns\:\ A\ random\ string\ from\ the\ dictionary\ ArrayList\n\n\ \ \ \ The\ dictionary\ ArrayList\ will\ contain\ a\ large\ number\n\ \ \ \ of\ words.\ You\ must\ call\ loadDictionary()\ in\ order\ to\ use\ it.\n\ \ \ \ If\ you\ look\ in\ the\ main\ method,\ loadDictionary\ is\ already\n\ \ \ \ called\ for\ you.\n\n\ \ \ \ You\ must\ have\ downloaded\ wordlist.txt\ and\ put\ it\ in\n\ \ \ \ the\ same\ directory\ as\ this\ java\ file.\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment13.params=n1\ n2\ n3\ s
+comment13.target=boolean\ placeOrientation(int,\ int,\ int,\ java.lang.String)
+comment14.params=numWords
+comment14.target=void\ addWords(int)
+comment14.text=\=\=\=\=\=\=\=\=\ public\ void\ addWords()\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ \ int\ numWords\ \ \n\ \ \ \ Returns\:\ \n\n\ \ \ \ This\ method\ should\ add\ numWords\ random\ words\ into\n\ \ \ \ the\ grid.\ Use\ the\ following\ algorithm\:\n\n\ \ \ \ For\ each\ word\ to\ be\ added\:\n\ \ \ \ 1.\ Get\ a\ random\ word\ (see\ above\ method)\n\ \ \ \ 2.\ Make\ a\ random\ int\ in\ the\ range\ [0,\ 2]\n\ \ \ \ 3.\ Make\ a\ random\ int\ in\ the\ range\ [0,\ grid.lenght]\n\ \ \ \ 4.\ Make\ a\ random\ int\ in\ the\ range\ [0,\ grid[0].length]\n\ \ \ \ 5.\ Add\ the\ word\ to\ the\ random\ coordinates\ from\ steps\n\ \ \ \ 3\ and\ 4.\ Use\ the\ first\ random\ number\ to\ determine\n\ \ \ \ orientation\ (horizontal,\ vertical,\ diagonal)\n\ \ \ \ 6.\ If\ the\ word\ was\ added\ successfully\ to\ the\ grid,\ add\ it\ to\ the\ words\ ArrayList\n\ \ \ \ You\ can\ assume\ that\ this\ method\ is\ always\ used\ with\ a\n\ \ \ \ reasonable\ value\ for\ numWords\ (i.e.\ You\ wouldn't\ try\ to\n\ \ \ \ put\ 100\ words\ into\ a\ 5x8\ grid...)\n\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment15.params=
+comment15.target=void\ loadDictionary()
+comment15.text=\=\=\=\=\=\=\=\=\ public\ void\ loadDictionary())\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ \ \n\ \ \ \ Returns\:\ \n\n\ \ \ \ DO\ NOT\ MODIFY\ THIS\ METHOD\ AT\ ALL\n\ \ \ \ Calling\ this\ method\ will\ load\ all\ the\ words\ from\n\ \ \ \ the\ textfile\ "wordlist.txt"\ into\ the\ dictionary\ ArrayList\n\n\ \ \ \ 11/21/11\ 17\:17\:47\n\ \ \ \ jdyrlandweaver\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\=\=\=\=\=\=\=\=\ public\ String\ toString())\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ \ \n\ \ \ \ Returns\:\ A\ string\ representation\ of\ the\ letter\ grid\ \n\n\ \ \ \ The\ string\ should\ display\ the\ letter\ grid\ and\ then\ the\ list\n\ \ \ \ of\ the\ words\ in\ the\ grid\ underneath.\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment3.params=r\ c\ s
+comment3.target=boolean\ fillGridH(int,\ int,\ java.lang.String)
+comment4.params=r\ c\ s
+comment4.target=boolean\ addWordH(int,\ int,\ java.lang.String)
+comment4.text=\=\=\=\=\=\=\=\=\ public\ boolean\ addWordH()\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ int\ r\n\ \ \ \ int\ c\n\ \ \ \ String\ s\ \n\ \ \ \ Returns\:\ boolean\ as\ to\ whether\ the\ method\ completed\n\n\ \ \ \ Attempts\ to\ add\ String\ s\ to\ the\ grid,\ horizontally,\ \n\ \ \ \ starting\ at\ row\ r\ and\ column\ c.\n\n\ \ \ \ If\ the\ String\ was\ added,\ true\ is\ returned.\n\n\ \ \ \ The\ String\ cannot\ be\ added,\ and\ false\ is\ returned,\ if\:\n\ \ \ \ The\ starting\ indecies\ are\ out\ of\ bounds\n\ \ \ \ The\ String\ cannot\ fit\ in\ the\ grid\ with\ the\ given\n\ \ \ \ starting\ coordinates.\n\ \ \ \ The\ String\ replacing\ an\ existing\ character\ on\ the\n\ \ \ \ grid\ (aside\ from\ the\ default\ character)\ with\ a\ \n\ \ \ \ different\ letter.\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment5.params=r\ c\ s
+comment5.target=boolean\ fillGridV(int,\ int,\ java.lang.String)
+comment6.params=r\ c\ s
+comment6.target=boolean\ addWordV(int,\ int,\ java.lang.String)
+comment6.text=\=\=\=\=\=\=\=\=\ public\ boolean\ addWordV()\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ int\ r\n\ \ \ \ int\ c\n\ \ \ \ String\ s\ \n\ \ \ \ Returns\:\ boolean\ as\ to\ whether\ the\ method\ completed\n\n\ \ \ \ Attempts\ to\ add\ String\ s\ to\ the\ grid,\ Vertically,\ \n\ \ \ \ starting\ at\ row\ r\ and\ column\ c.\n\n\ \ \ \ If\ the\ String\ was\ added,\ true\ is\ returned.\n\n\ \ \ \ The\ String\ cannot\ be\ added,\ and\ false\ is\ returned,\ if\:\n\ \ \ \ The\ starting\ indecies\ are\ out\ of\ bounds\n\ \ \ \ The\ String\ cannot\ fit\ in\ the\ grid\ with\ the\ given\n\ \ \ \ starting\ coordinates.\n\ \ \ \ The\ String\ replacing\ an\ existing\ character\ on\ the\n\ \ \ \ grid\ (aside\ from\ the\ default\ character)\ with\ a\ \n\ \ \ \ different\ letter.\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment7.params=r\ c\ s
+comment7.target=boolean\ fillGridD(int,\ int,\ java.lang.String)
+comment8.params=r\ c\ s
+comment8.target=boolean\ addWordD(int,\ int,\ java.lang.String)
+comment8.text=\=\=\=\=\=\=\=\=\ public\ boolean\ addWordD()\ \=\=\=\=\=\=\=\=\=\=\n\ \ \ \ Inputs\:\ \ int\ r\n\ \ \ \ int\ c\n\ \ \ \ String\ s\ \n\ \ \ \ Returns\:\ boolean\ as\ to\ whether\ the\ method\ completed\n\n\ \ \ \ Attempts\ to\ add\ String\ s\ to\ the\ grid,\ Diagonally,\ \n\ \ \ \ starting\ at\ row\ r\ and\ column\ c.\n\n\ \ \ \ If\ the\ String\ was\ added,\ true\ is\ returned.\n\n\ \ \ \ The\ String\ cannot\ be\ added,\ and\ false\ is\ returned,\ if\:\n\ \ \ \ The\ starting\ indecies\ are\ out\ of\ bounds\n\ \ \ \ The\ String\ cannot\ fit\ in\ the\ grid\ with\ the\ given\n\ \ \ \ starting\ coordinates.\n\ \ \ \ The\ String\ replacing\ an\ existing\ character\ on\ the\n\ \ \ \ grid\ (aside\ from\ the\ default\ character)\ with\ a\ \n\ \ \ \ different\ letter.\n\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
+comment9.params=
+comment9.target=char\ randomLetter()
+numComments=16
